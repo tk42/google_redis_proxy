@@ -5,7 +5,6 @@ echo Connecting to ${REDIS_IP}:${REDIS_PORT}
 
 sed -i s/\{REDIS_IP\}/${REDIS_IP}/g /usr/local/etc/haproxy/haproxy.cfg
 sed -i s/\{REDIS_PORT\}/${REDIS_PORT}/g /usr/local/etc/haproxy/haproxy.cfg
-sed -i s/\{PROXY_PORT\}/${PROXY_PORT}/g /usr/local/etc/haproxy/haproxy.cfg
 cat /usr/local/etc/haproxy/haproxy.cfg
 
 # first arg is `-f` or `--some-option`
